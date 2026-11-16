@@ -1,0 +1,36 @@
+format = "$python$username$hostname$directory$git_branch$character"
+add_newline = false
+
+[python]
+format = '[\($virtualenv\) ]($style)'
+style = "#4a8bbe"
+detect_extensions = []
+detect_files = []
+detect_folders = []
+
+[username]
+show_always = true
+format = "[$user]($style)"
+style_user = "#1cdc9a"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname]($style) "
+style = "white"
+
+[directory]
+format = "[$path]($style)"
+style = "#11d116"
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+format = ' ([\($branch\)]($style))'
+style = "yellow"
+
+[git_status]
+disabled = true
+
+[character]
+success_symbol = "[>](white)"
+error_symbol = "[>](white)"
